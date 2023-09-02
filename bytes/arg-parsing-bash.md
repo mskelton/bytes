@@ -1,0 +1,34 @@
+---
+title: Arg Parsing in Bash
+date: "2023-09-01"
+tags: bash
+---
+
+I was writing a script the other day that I needed to accept some optional
+arguments. I found that I could use `getopt`, but turns out the simple approach
+was cleaner in the end.
+
+```bash
+#!/usr/bin/env bash
+
+while [[ $# -gt 0 ]]; do
+	case "$1" in
+    -c | --config)
+		config="$2"
+		shift 2
+		;;
+	-u | --url)
+		url="$2"
+		shift 2
+		;;
+	*)
+		args="$1"
+		shift
+		;;
+	esac
+done
+
+echo "$config"
+echo "$url"
+echo "$args"
+```
