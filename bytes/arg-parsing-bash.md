@@ -1,6 +1,5 @@
 ---
 title: Arg Parsing in Bash
-date: "2023-09-01"
 tags: bash
 ---
 
