@@ -9,8 +9,8 @@ browser. After exploring how it worked internally given I was a bit astonished
 it is even possible, I found that it's all just using AppleScript.
 
 So, a bit of bash code later and I had a working implementation of a new `js`
-command to allow running JS either the active browser tab or in all windows with
-a given URL.
+command to allow running JavaScript either the active browser tab or in all
+windows with a given URL.
 
 ```bash js
 #!/usr/bin/env bash
