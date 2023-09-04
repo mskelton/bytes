@@ -1,5 +1,5 @@
 ---
-title: Controlling browsers with AppleScript
+title: Controlling Browsers with AppleScript
 tags: cli
 ---
 
