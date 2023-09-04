@@ -1,5 +1,5 @@
 ---
-title: Controlling Browsers with AppleScript
+title: Controlling Browsers With AppleScript
 tags: cli
 ---
 
@@ -12,7 +12,7 @@ So, a bit of bash code later and I had a working implementation of a new `js`
 command to allow running JS either the active browser tab or in all windows with
 a given URL.
 
-```bash
+```bash js
 #!/usr/bin/env bash
 
 # Default values
@@ -70,7 +70,7 @@ osascript -e "
 Here's the command that will play music from YouTube music like what the Raycast
 extension was doing. But this now can be a terminal command!
 
-```bash
+```bash play
 js --url music.youtube.com "document.querySelector('#play-pause-button[aria-label=Play]').click()"
 ```
 
