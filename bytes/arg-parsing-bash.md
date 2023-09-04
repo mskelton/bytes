@@ -1,6 +1,6 @@
 ---
 title: Arg Parsing in Bash
-tags: bash
+tags: [bash, cli]
 ---
 
 I was writing a script the other day that I needed to accept some optional

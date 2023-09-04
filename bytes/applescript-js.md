@@ -1,7 +1,6 @@
 ---
 title: Controlling browsers with AppleScript
-description:
-tags: [cli]
+tags: cli
 ---
 
 I recently came across a [Raycast](https://www.raycast.com) extension that
