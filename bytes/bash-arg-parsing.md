@@ -4,8 +4,8 @@ tags: [bash, cli]
 ---
 
 I was writing a script the other day that I needed to accept some optional
-arguments. I found that I could use `getopt`, but turns out the simple approach
-was cleaner in the end.
+arguments. I found that I could use the `getopt` command, but turns out the
+simple approach was cleaner in the end.
 
 ```bash
 #!/usr/bin/env bash
