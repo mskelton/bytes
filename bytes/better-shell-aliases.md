@@ -1,6 +1,7 @@
 ---
 title: Better Shell Aliases
 tags: [fish, cli]
+date: 2023-09-05
 ---
 
 I use shell aliases quite heavily to simplify common CLI commands. However, one
