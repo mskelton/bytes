@@ -1,5 +1,6 @@
 {
   "name": "bytes",
+  "packageManager": "npm@10.0.0",
   "scripts": {
     "format": "prettier --write ."
   },
