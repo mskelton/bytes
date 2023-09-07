@@ -4,7 +4,7 @@ date: 2023-09-06
 tags: git
 ---
 
-I've started to use `git worktree` more lately but one of the pain points I had
+I've started to use `git worktree`s more lately but one of the pain points I had
 was that they don't copied ignored files such as `.env` files. I found I was
 able to improve this workflow by adding a `post-checkout` hook.
 

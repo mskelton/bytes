@@ -1,7 +1,7 @@
 ---
 title: Arg Parsing in Bash
-tags: [bash, cli]
 date: 2023-09-03
+tags: [bash, cli]
 ---
 
 I was writing a script the other day that I needed to accept some optional
