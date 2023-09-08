@@ -10,7 +10,8 @@ Neovim.
 
 So, a few lines of Bash later and I'm able to pass a list of Git branches
 through [fzf](https://github.com/junegunn/fzf) and then switch to the branch
-that was selected.
+that was selected. It will sort by latest commit so that recent branches are at
+the top and only local branches will be listed.
 
 ```bash fn
 #!/usr/bin/env bash
