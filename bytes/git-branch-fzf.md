@@ -1,0 +1,25 @@
+---
+title: Switch Git Branches With fzf
+date: 2023-09-07
+tags: [cli, git]
+---
+
+I frequently switch between Git branches inside of Neovim using Telescope, but
+it's also handy to be able to switch branches using fuzzy find when outside of
+Neovim.
+
+So, a few lines of Bash later and I'm able to pass a list of Git branches
+through [fzf](https://github.com/junegunn/fzf) and then switch to the branch
+that was selected.
+
+```bash fn
+#!/usr/bin/env bash
+
+branches=$(git for-each-ref --sort=-committerdate --format="%(refname:short)" refs/heads/)
+current=$(git symbolic-ref --short HEAD)
+branch=$(echo "$branches" | grep -v "^$current$" | fzf +m)
+
+if [[ -n "$branch" ]]; then
+	git co "$branch"
+fi
+```
