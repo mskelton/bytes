@@ -78,3 +78,12 @@ js --url music.youtube.com "document.querySelector('#play-pause-button[aria-labe
 Definitely planning on using this more for other areas where I have simple
 JavaScript I want to execute, such as clicking something after a hot reload,
 etc.
+
+## Chromium Security
+
+In Chromium based browsers (e.g. Chrome, Arc), you need to enable a developer
+flag in order for this to work properly. You can find it in the menu:
+
+```
+View -> Developer -> Allow JavaScript from Apple Events
+```
