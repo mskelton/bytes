@@ -1,0 +1,33 @@
+---
+title: Vim Scratch Buffers
+date: 2023-09-16
+tags: vim
+---
+
+I use scratch (unnamed) buffers in Vim a fair bit when working with text
+manipulation for content not saved to a file such as editing some JSON, or
+building some commands to run from a list of ids. Knowing how to easily create
+scratch buffers is a must have when using Vim.
+
+The simplest command for creating a scratch buffer is:
+
+```vim
+:enew
+```
+
+This will create a new scratch buffer that you can start using. This is akin to
+a new unnamed tab in other editors like VS Code. But you can also use the
+variants of this command to create a vertical or horizontally split scratch
+buffer.
+
+This is very handy since often I want to work in the scratch buffer while
+keeping some other code in view.
+
+```vim
+:vnew " Scratch buffer in a vertical split
+:hnew " Scratch buffer in a horizontal split
+```
+
+I originally tried `:vsplit enew` but that creates a vertical split with a
+buffer named `enew`, rather than a true scratch buffer. Now I can check this off
+my learning list!
