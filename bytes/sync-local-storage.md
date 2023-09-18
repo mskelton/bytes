@@ -21,7 +21,7 @@ website theme to dark mode, both tabs will become dark. No need to refresh!
 
 This feels quite magical as a user and it's incredibly simple to implement!
 
-```typescript
+```typescript {8-16}
 function useLocalStorage<T>(key: string, initialValue: T) {
   const [value, setValue] = useState<T>(() => {
     const json = localStorage.getItem(key)
