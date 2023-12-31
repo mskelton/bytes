@@ -2,7 +2,7 @@
   "name": "bytes",
   "packageManager": "npm@10.0.0",
   "scripts": {
-    "format": "prettier --write ."
+    "fmt": "prettier --write ."
   },
   "devDependencies": {
     "prettier": "^3.0.3"
